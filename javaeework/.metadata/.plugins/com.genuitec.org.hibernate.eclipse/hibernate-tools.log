@@ -1,0 +1,4 @@
+2019-06-17 11:04:46,242 0      [      Worker-15] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: E:\javaeework\Hibernate_Spring\src\applicationContext.xml(2) Document is invalid: no grammar found.
+2019-06-17 11:04:46,289 47     [      Worker-15] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: E:\javaeework\Hibernate_Spring\src\applicationContext.xml(2) Document root element "beans", must match DOCTYPE root "null".
+2019-06-17 12:44:47,577 6001335 [      Worker-12] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: E:\javaeework\xscjManage\src\applicationContext.xml(2) Document is invalid: no grammar found.
+2019-06-17 12:44:47,578 6001336 [      Worker-12] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: E:\javaeework\xscjManage\src\applicationContext.xml(2) Document root element "beans", must match DOCTYPE root "null".

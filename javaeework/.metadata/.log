@@ -1,0 +1,2090 @@
+!SESSION 2019-05-30 15:10:44.133 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+This is a continuation of log file E:\javaeework\.metadata\.bak_0.log
+Created Time: 2019-05-30 15:11:10.041
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 15:11:10.041
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 15:11:10.041
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 15:11:10.042
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 0 2019-05-30 15:11:10.091
+!MESSAGE While loading class "org.maven.ide.eclipse.internal.embedder.ArtifactTransferListenerAdapter", thread "Thread[Worker-1,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.maven.ide.eclipse_0.10.0.me201005202254 [987]". To avoid deadlock, thread "Thread[Worker-1,5,main]" is proceeding but "org.maven.ide.eclipse.internal.embedder.ArtifactTransferListenerAdapter" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.maven.ide.eclipse_0.10.0.me201005202254.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createArtifactTransferListener(MavenImpl.java:796)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createExecutionRequest(MavenImpl.java:199)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:343)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 18 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createArtifactTransferListener(MavenImpl.java:796)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createExecutionRequest(MavenImpl.java:199)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:343)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2019-05-30 15:11:15.093
+!MESSAGE While loading class "org.maven.ide.eclipse.internal.project.DependencyResolutionContext", thread "Thread[Worker-1,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.maven.ide.eclipse_0.10.0.me201005202254 [987]". To avoid deadlock, thread "Thread[Worker-1,5,main]" is proceeding but "org.maven.ide.eclipse.internal.project.DependencyResolutionContext" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.maven.ide.eclipse_0.10.0.me201005202254.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:345)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:345)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.maven.ide.eclipse 4 0 2019-05-30 15:11:30.934
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Authorization exception retrieving nexus-maven-repository-index.properties
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:681)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-05-30 16:07:49.787
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:86)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:996)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:442)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:548)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-05-30 16:07:49.788
+!MESSAGE Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 16:29:24.947
+!MESSAGE NLS unused message: Struts2EditorEditorActionBarContributor_view_menu_label in: com.genuitec.eclipse.struts2.core.messages
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-05-30 16:33:01.660
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for x_aiff [in x_aiff.class [in sun.net.www.content.audio [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:86)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:996)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:442)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:548)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-05-30 16:33:01.660
+!MESSAGE Unknown javadoc format for x_aiff [in x_aiff.class [in sun.net.www.content.audio [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-05-30 16:51:48.295
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:86)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:996)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:442)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:548)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-05-30 16:51:48.295
+!MESSAGE Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]
+!SESSION 2019-05-30 16:56:33.479 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2019-05-30 16:56:47.167
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-30 16:56:47.167
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@119510f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 16:56:48.615
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 16:56:48.616
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 16:56:48.616
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.maven.ide.eclipse 4 0 2019-05-30 16:56:50.401
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Authorization exception retrieving nexus-maven-repository-index.properties
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:681)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 17:03:15.951
+!MESSAGE NLS unused message: Struts2EditorEditorActionBarContributor_view_menu_label in: com.genuitec.eclipse.struts2.core.messages
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-05-30 17:19:43.189
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for TODO {key=Lcom/sun/xml/internal/bind/v2/TODO;} [in TODO.class [in com.sun.xml.internal.bind.v2 [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:86)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:996)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:555)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:512)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:495)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:82)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-05-30 17:19:43.189
+!MESSAGE Unknown javadoc format for TODO {key=Lcom/sun/xml/internal/bind/v2/TODO;} [in TODO.class [in com.sun.xml.internal.bind.v2 [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-05-30 17:21:18.878
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:86)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:996)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:442)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:548)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-05-30 17:21:18.879
+!MESSAGE Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-05-30 17:26:59.534
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for TODO {key=Lcom/sun/xml/internal/bind/v2/TODO;} [in TODO.class [in com.sun.xml.internal.bind.v2 [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:86)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:996)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:555)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:512)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:495)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:82)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-05-30 17:26:59.534
+!MESSAGE Unknown javadoc format for TODO {key=Lcom/sun/xml/internal/bind/v2/TODO;} [in TODO.class [in com.sun.xml.internal.bind.v2 [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]
+!SESSION 2019-05-30 17:32:36.596 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2019-05-30 17:32:49.849
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-30 17:32:49.849
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@48b1ca,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 17:32:51.204
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 17:32:51.205
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 17:32:51.206
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.maven.ide.eclipse 4 0 2019-05-30 17:32:53.021
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Authorization exception retrieving nexus-maven-repository-index.properties
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:681)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2019-05-30 19:37:56.216 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2019-05-30 19:38:33.971
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-30 19:38:33.971
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@1df3551,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.maven.ide.eclipse 4 0 2019-05-30 19:38:43.452
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Authorization exception retrieving nexus-maven-repository-index.properties
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:681)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 19:38:55.224
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 19:38:55.226
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-30 19:38:55.227
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+!SESSION 2019-06-01 20:17:59.045 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2019-06-01 20:18:23.097
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-06-01 20:18:23.097
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@1785b00,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-01 20:18:35.478
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-01 20:18:35.478
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-01 20:18:35.478
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 0 2019-06-01 20:18:38.571
+!MESSAGE While loading class "org.maven.ide.eclipse.internal.embedder.ArtifactTransferListenerAdapter", thread "Thread[Worker-4,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.maven.ide.eclipse_0.10.0.me201005202254 [987]". To avoid deadlock, thread "Thread[Worker-4,5,main]" is proceeding but "org.maven.ide.eclipse.internal.embedder.ArtifactTransferListenerAdapter" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.maven.ide.eclipse_0.10.0.me201005202254.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createArtifactTransferListener(MavenImpl.java:796)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createExecutionRequest(MavenImpl.java:199)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:343)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 18 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createArtifactTransferListener(MavenImpl.java:796)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createExecutionRequest(MavenImpl.java:199)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:343)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2019-06-01 20:18:43.582
+!MESSAGE While loading class "org.maven.ide.eclipse.internal.project.DependencyResolutionContext", thread "Thread[Worker-4,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.maven.ide.eclipse_0.10.0.me201005202254 [987]". To avoid deadlock, thread "Thread[Worker-4,5,main]" is proceeding but "org.maven.ide.eclipse.internal.project.DependencyResolutionContext" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.maven.ide.eclipse_0.10.0.me201005202254.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:345)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:345)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.maven.ide.eclipse 4 0 2019-06-01 20:18:51.622
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Authorization exception retrieving nexus-maven-repository-index.properties
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:681)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2019-06-14 10:04:46.224 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2019-06-14 10:05:09.241
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-06-14 10:05:09.241
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@3c97db,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:05:23.270
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:05:23.271
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:05:23.271
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 0 2019-06-14 10:05:25.352
+!MESSAGE While loading class "org.maven.ide.eclipse.internal.embedder.ArtifactTransferListenerAdapter", thread "Thread[Worker-9,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.maven.ide.eclipse_0.10.0.me201005202254 [987]". To avoid deadlock, thread "Thread[Worker-9,5,main]" is proceeding but "org.maven.ide.eclipse.internal.embedder.ArtifactTransferListenerAdapter" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.maven.ide.eclipse_0.10.0.me201005202254.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createArtifactTransferListener(MavenImpl.java:796)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createExecutionRequest(MavenImpl.java:199)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:343)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 18 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createArtifactTransferListener(MavenImpl.java:796)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createExecutionRequest(MavenImpl.java:199)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:343)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2019-06-14 10:05:30.355
+!MESSAGE While loading class "org.maven.ide.eclipse.internal.project.DependencyResolutionContext", thread "Thread[Worker-9,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.maven.ide.eclipse_0.10.0.me201005202254 [987]". To avoid deadlock, thread "Thread[Worker-9,5,main]" is proceeding but "org.maven.ide.eclipse.internal.project.DependencyResolutionContext" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.maven.ide.eclipse_0.10.0.me201005202254.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:345)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:345)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.maven.ide.eclipse 4 0 2019-06-14 10:05:38.283
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Authorization exception retrieving nexus-maven-repository-index.properties
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:681)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:14:37.661
+!MESSAGE NLS unused message: ContentAssistProposal_label in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:14:37.662
+!MESSAGE NLS unused message: ContentAssistProposal_tooltip in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:14:37.662
+!MESSAGE NLS unused message: ContentAssistProposal_image in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:14:37.662
+!MESSAGE NLS unused message: ContentAssistProposal_description in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:14:37.662
+!MESSAGE NLS unused message: ContentAssistTip_label in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:14:37.663
+!MESSAGE NLS unused message: ContentAssistTip_tooltip in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:14:37.663
+!MESSAGE NLS unused message: ContentAssistTip_image in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:14:37.663
+!MESSAGE NLS unused message: ContentAssistTip_description in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:14:37.663
+!MESSAGE NLS unused message: ContentFormat_label in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:14:37.663
+!MESSAGE NLS unused message: ContentFormat_tooltip in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:14:37.664
+!MESSAGE NLS unused message: ContentFormat_image in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:14:37.664
+!MESSAGE NLS unused message: ContentFormat_description in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:41:02.061
+!MESSAGE NLS unused message: WizardNewFileCreationPage_title in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:41:02.061
+!MESSAGE NLS unused message: WizardNewFileCreationPage_errorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:41:02.062
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 10:41:02.062
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorMessage in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.ui 4 4 2019-06-14 11:06:59.404
+!MESSAGE Part already exists in page layout: org.eclipse.debug.ui.ExpressionView.
+
+!ENTRY org.eclipse.ui 4 4 2019-06-14 11:08:25.620
+!MESSAGE Part already exists in page layout: org.eclipse.debug.ui.ExpressionView.
+
+!ENTRY org.eclipse.ui 4 4 2019-06-14 11:08:52.435
+!MESSAGE Part already exists in page layout: org.eclipse.debug.ui.ExpressionView.
+!SESSION 2019-06-14 11:09:51.216 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2019-06-14 11:09:59.301
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-06-14 11:09:59.301
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@18cbd65,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 11:10:00.469
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 11:10:00.469
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-14 11:10:00.470
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.maven.ide.eclipse 4 0 2019-06-14 11:10:03.391
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Authorization exception retrieving nexus-maven-repository-index.properties
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:681)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui 4 4 2019-06-14 11:10:33.346
+!MESSAGE Part already exists in page layout: org.eclipse.debug.ui.ExpressionView.
+
+!ENTRY org.eclipse.ui 4 4 2019-06-14 11:12:25.231
+!MESSAGE Part already exists in page layout: org.eclipse.debug.ui.ExpressionView.
+!SESSION 2019-06-17 09:29:16.964 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2019-06-17 09:31:57.667
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-06-17 09:31:57.667
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@b66478,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 09:32:11.287
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 09:32:11.287
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 09:32:11.287
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 0 2019-06-17 09:32:15.358
+!MESSAGE While loading class "org.maven.ide.eclipse.internal.embedder.ArtifactTransferListenerAdapter", thread "Thread[Worker-7,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.maven.ide.eclipse_0.10.0.me201005202254 [987]". To avoid deadlock, thread "Thread[Worker-7,5,main]" is proceeding but "org.maven.ide.eclipse.internal.embedder.ArtifactTransferListenerAdapter" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.maven.ide.eclipse_0.10.0.me201005202254.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createArtifactTransferListener(MavenImpl.java:796)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createExecutionRequest(MavenImpl.java:199)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:343)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 18 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createArtifactTransferListener(MavenImpl.java:796)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.createExecutionRequest(MavenImpl.java:199)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:343)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2019-06-17 09:32:20.364
+!MESSAGE While loading class "org.maven.ide.eclipse.internal.project.DependencyResolutionContext", thread "Thread[Worker-7,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.maven.ide.eclipse_0.10.0.me201005202254 [987]". To avoid deadlock, thread "Thread[Worker-7,5,main]" is proceeding but "org.maven.ide.eclipse.internal.project.DependencyResolutionContext" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.maven.ide.eclipse_0.10.0.me201005202254.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:345)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerImpl.refresh(MavenProjectManagerImpl.java:345)
+	at org.maven.ide.eclipse.internal.project.MavenProjectManagerRefreshJob.run(MavenProjectManagerRefreshJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.maven.ide.eclipse 4 0 2019-06-17 09:32:28.161
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Authorization exception retrieving nexus-maven-repository-index.properties
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:681)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:26:47.078
+!MESSAGE NLS unused message: ContentAssistProposal_label in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:26:47.078
+!MESSAGE NLS unused message: ContentAssistProposal_tooltip in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:26:47.078
+!MESSAGE NLS unused message: ContentAssistProposal_image in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:26:47.078
+!MESSAGE NLS unused message: ContentAssistProposal_description in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:26:47.078
+!MESSAGE NLS unused message: ContentAssistTip_label in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:26:47.078
+!MESSAGE NLS unused message: ContentAssistTip_tooltip in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:26:47.078
+!MESSAGE NLS unused message: ContentAssistTip_image in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:26:47.078
+!MESSAGE NLS unused message: ContentAssistTip_description in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:26:47.078
+!MESSAGE NLS unused message: ContentFormat_label in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:26:47.078
+!MESSAGE NLS unused message: ContentFormat_tooltip in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:26:47.078
+!MESSAGE NLS unused message: ContentFormat_image in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:26:47.078
+!MESSAGE NLS unused message: ContentFormat_description in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:41:40.422
+!MESSAGE NLS unused message: Struts2EditorEditorActionBarContributor_view_menu_label in: com.genuitec.eclipse.struts2.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:42:28.056
+!MESSAGE NLS unused message: WizardNewFileCreationPage_title in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:42:28.056
+!MESSAGE NLS unused message: WizardNewFileCreationPage_errorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:42:28.056
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 10:42:28.056
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorMessage in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-06-17 11:06:12.751
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:86)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:996)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:442)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:548)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-06-17 11:06:12.751
+!MESSAGE Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-06-17 11:09:53.388
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for TODO {key=Lcom/sun/xml/internal/bind/v2/TODO;} [in TODO.class [in com.sun.xml.internal.bind.v2 [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:86)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:996)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:555)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:512)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:495)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:82)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-06-17 11:09:53.388
+!MESSAGE Unknown javadoc format for TODO {key=Lcom/sun/xml/internal/bind/v2/TODO;} [in TODO.class [in com.sun.xml.internal.bind.v2 [in E:\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-06-17 11:30:07.377
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for ApplicationContext [in ApplicationContext.class [in org.springframework.context [in E:\Genuitec\MyEclipse-8.6\configuration\org.eclipse.osgi\bundles\92\1\.cp\data\3.0\lib\core\org.springframework.context-3.0.1.RELEASE-A.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:86)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:996)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:442)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:548)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-06-17 11:30:07.377
+!MESSAGE Unknown javadoc format for ApplicationContext [in ApplicationContext.class [in org.springframework.context [in E:\Genuitec\MyEclipse-8.6\configuration\org.eclipse.osgi\bundles\92\1\.cp\data\3.0\lib\core\org.springframework.context-3.0.1.RELEASE-A.jar]]]
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:36:36.720
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:36:39.464
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:36:40.950
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:36:41.116
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:43:49.267
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:43:49.292
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:43:49.344
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:43:49.392
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:43:49.979
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:43:50.011
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:43:50.060
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:43:50.103
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:43:50.652
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:43:50.742
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:43:50.946
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:43:51.043
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:44:48.236
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:44:48.263
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:44:48.337
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:44:48.387
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:44:48.959
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:44:49.061
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:44:49.275
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:44:49.374
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:40.055
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:40.092
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:40.140
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:40.190
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:40.757
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:40.833
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:41.026
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:41.121
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:47.520
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:47.608
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:47.815
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:47.919
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:50.782
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:50.864
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:51.064
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:46:51.158
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:01.606
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:01.686
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:01.882
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:01.980
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:07.533
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:07.617
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:07.811
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:07.906
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:15.474
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:15.501
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:15.558
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:15.609
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:16.165
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:16.241
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:16.436
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:47:16.530
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:23.485
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:23.519
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:23.566
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:23.618
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:24.194
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:24.284
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:24.491
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:24.607
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:26.725
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:26.754
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:26.802
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:26.854
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:27.439
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:27.519
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:27.726
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:27.825
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:29.080
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:29.120
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:29.168
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:29.212
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:29.805
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:29.883
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:30.082
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:30.181
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:43.418
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:43.451
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:43.510
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:43.557
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:44.238
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:44.315
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:44.530
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:44.636
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:56.757
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:56.836
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:57.028
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:48:57.123
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:49:23.113
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:49:23.192
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:49:23.389
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:49:23.482
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:49:37.103
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:49:37.185
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:49:37.376
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:49:37.475
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:50:00.315
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:50:00.402
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:50:00.607
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:50:00.706
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:51:42.559
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:51:42.643
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:51:42.856
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:51:42.954
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:51:47.570
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:51:47.666
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:51:47.862
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:51:47.964
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:51:58.867
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:51:58.960
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:51:59.150
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:51:59.243
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:52:04.709
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:52:04.791
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:52:05.005
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:52:05.105
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:24.120
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:24.164
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:24.214
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:24.271
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:24.879
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:24.970
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:25.177
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:25.279
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:28.108
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:28.199
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:28.391
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:28.487
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:38.669
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:38.753
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:38.952
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:39.052
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:47.468
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:47.544
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:47.741
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:47.841
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:52.414
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:52.504
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:52.701
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:52.796
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:59.464
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:59.498
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:59.550
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:54:59.596
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:00.182
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:00.267
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:00.470
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:00.572
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:50.755
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:50.787
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:50.840
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:50.891
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:51.461
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:51.537
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:51.735
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:51.834
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:57.585
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:57.620
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:57.676
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:57.729
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:58.282
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:58.366
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:58.561
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:55:58.665
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:04.669
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:04.749
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:04.944
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:05.045
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:09.888
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:09.965
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:10.163
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:10.261
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:15.820
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:15.897
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:16.093
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:16.191
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:59.260
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:59.337
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:59.530
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:56:59.627
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:57:10.282
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:57:10.315
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:57:10.364
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:57:10.420
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:57:11.015
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:57:11.103
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:57:11.321
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 12:57:11.416
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-17 13:01:00.512
+!MESSAGE NLS missing message: BrowseToTLDAttributeNameDeclaration in: org.jboss.tools.common.text.ext.hyperlink.xpl.Messages
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:33.865
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:33.898
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:33.950
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:34.002
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:34.578
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:34.666
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:34.860
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:34.952
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:36.203
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:36.231
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:36.281
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:36.328
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:36.921
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:37.000
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:37.189
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:37.284
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:47.306
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:47.340
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:47.390
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:47.440
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:48.013
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:48.089
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:48.284
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:02:48.386
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:03:39.585
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:03:39.612
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:03:39.670
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:03:39.718
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:03:40.279
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:03:40.361
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:03:40.559
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:03:40.654
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:13.487
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:13.569
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:13.759
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:13.849
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:19.761
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:19.848
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:20.065
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:20.172
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:31.071
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:31.171
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:31.370
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:31.465
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:51.279
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:51.363
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:51.574
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:51.682
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:55.180
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:55.273
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:55.474
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:04:55.574
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:05:25.291
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:05:25.318
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:05:25.370
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:05:25.424
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:05:25.997
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:05:26.080
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:05:26.287
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:05:26.388
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:05:32.361
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:05:32.444
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:05:32.645
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-17 13:05:32.740
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+!SESSION 2019-06-19 13:37:42.557 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-19 13:37:51.855
+!MESSAGE NLS unused message: WizardNewFileCreationPage_title in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-19 13:37:51.866
+!MESSAGE NLS unused message: WizardNewFileCreationPage_errorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-19 13:37:51.866
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-19 13:37:51.867
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorMessage in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.jface 2 0 2019-06-19 13:38:15.615
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-06-19 13:38:15.615
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@1f4899c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.maven.ide.eclipse 4 0 2019-06-19 13:38:30.776
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Authorization exception retrieving nexus-maven-repository-index.properties
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:681)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-19 13:38:44.276
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-19 13:38:44.277
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-19 13:38:44.277
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-19 13:38:59.937
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-19 13:39:00.975
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-19 13:39:01.795
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-19 13:39:02.932
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+!SESSION 2019-06-26 14:02:34.265 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-26 14:02:41.454
+!MESSAGE NLS unused message: WizardNewFileCreationPage_title in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-26 14:02:41.469
+!MESSAGE NLS unused message: WizardNewFileCreationPage_errorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-26 14:02:41.470
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-26 14:02:41.470
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorMessage in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.jface 2 0 2019-06-26 14:02:59.555
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-06-26 14:02:59.555
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@15d7f70,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.maven.ide.eclipse 4 0 2019-06-26 14:03:12.294
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Authorization exception retrieving nexus-maven-repository-index.properties
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:681)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-26 14:03:12.343
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-26 14:03:12.344
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-26 14:03:12.344
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-26 14:03:37.446
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-26 14:03:40.511
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-26 14:03:42.232
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-26 14:03:43.840
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+!SESSION 2019-06-26 14:13:19.572 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2019-06-26 14:13:26.334
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-06-26 14:13:26.334
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@1ba1558,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-26 14:13:27.779
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-26 14:13:27.780
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2019-06-26 14:13:27.780
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-26 14:13:29.000
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/xwork-core-2.3.16.3.jar|com/opensymphony/xwork2/util/finder/UrlSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-26 14:13:29.154
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/hibernate-entitymanager.jar|org/hibernate/ejb/Ejb3Configuration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-26 14:13:29.270
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar|org/springframework/util/xml/StaxEventContentHandler.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2019-06-26 14:13:29.358
+!MESSAGE The Java indexing could not index xscjManage/WebRoot/WEB-INF/lib/struts2-core-2.3.16.3.jar|org/apache/struts2/interceptor/CheckboxInterceptor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.maven.ide.eclipse 4 0 2019-06-26 14:13:34.404
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Authorization exception retrieving nexus-maven-repository-index.properties
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:681)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

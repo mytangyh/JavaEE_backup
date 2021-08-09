@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=sh2/src&lt;org.dao{DlDao.java[DlDao" modifiers="513" timestamp="1558963893433"/>
+<typeInfo handle="=struts_hibernate/src&lt;org.dao{DlDao.java[DlDao" modifiers="513" timestamp="1559111113148"/>
+<typeInfo handle="=struts_hibernate/WebRoot\/WEB-INF\/lib\/xwork-core-2.3.37.jar&lt;com.opensymphony.xwork2(ActionSupport.class[ActionSupport" modifiers="33" timestamp="1559042859096"/>
+<typeInfo handle="=struts_hibernate/src&lt;org.dao{XsInfDaol.java[XsInfDaol" modifiers="513" timestamp="1559206579035"/>
+<typeInfo handle="=struts_hibernate/E:\/Genuitec\/Common\/binary\/com.sun.java.jdk.win32.x86_1.6.0.013\/jre\/lib\/rt.jar&lt;com.sun.org.apache.xerces.internal.xs(XSIDCDefinition.class[XSIDCDefinition" modifiers="1537" timestamp="1238670952000"/>
+<typeInfo handle="=struts_hibernate/src&lt;org.dao{UpdateXsDao.java[UpdateXsDao" modifiers="513" timestamp="1559208135196"/>
+<typeInfo handle="=ch5spring/src&lt;cn.edu.ujn.ch5{IHuman.java[IHuman" modifiers="513" timestamp="1560478606007"/>
+<typeInfo handle="=lab8/src&lt;lab8{Human.java[Human" modifiers="513" timestamp="1560480140843"/>
+<typeInfo handle="=lab8/src&lt;lab8{Language.java[Language" modifiers="513" timestamp="1560480180549"/>
+<typeInfo handle="=Struts_Spring/WebRoot\/WEB-INF\/lib\/xwork-core-2.3.37.jar&lt;com.opensymphony.xwork2(ActionSupport.class[ActionSupport" modifiers="33" timestamp="1560737944603"/>
+<typeInfo handle="=Hibernate_Spring/src&lt;org.dao{DlDao.java[DlDao" modifiers="513" timestamp="1560741505354"/>
+<typeInfo handle="=xscjManage/src&lt;org.dao{DlDao.java[DlDao" modifiers="513" timestamp="1560746834921"/>
+<typeInfo handle="=xscjManage/WebRoot\/WEB-INF\/lib\/org.springframework.orm-3.1.1.RELEASE.jar&lt;org.springframework.orm.hibernate3.support(HibernateDaoSupport.class[HibernateDaoSupport" modifiers="1057" timestamp="1560746191992"/>
+<typeInfo handle="=xscjManage/src&lt;org.service{DlService.java[DlService" modifiers="513" timestamp="1560747298920"/>
+<typeInfo handle="=xscjManage/WebRoot\/WEB-INF\/lib\/org.springframework.web.struts-3.1.1.RELEASE.jar&lt;org.springframework.web.struts(ActionSupport.class[ActionSupport" modifiers="1049633" timestamp="1560746192036"/>
+</typeInfoHistroy>

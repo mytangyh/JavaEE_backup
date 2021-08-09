@@ -1,0 +1,10 @@
+#Mon May 06 09:59:15 CST 2019
+Single-line=comment\=0,0,0,0,0,173,149,175
+Type=0,0,0,0,0,171,37,37
+Multi-line=comment\=0,0,0,0,0,173,149,175
+Single=quoted string\=0,0,0,0,0,49,126,204
+Keyword=0,0,0,0,0,41,95,148
+Others=0,0,0,0,0,88,88,88
+Identifier=0,0,0,0,0,188,90,101
+eclipse.preferences.version=1
+Double=quoted string\=0,0,0,0,0,49,126,204

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="lab8"/>
+<aop-project name="Hibernate_Spring"/>
+<aop-project name="JSPExample"/>
+<aop-project name="sh2"/>
+<aop-project name="lab5"/>
+<aop-project name="Spring_Advices"/>
+<aop-project name="manager"/>
+<aop-project name="xscjManage"/>
+<aop-project name="struts_hibernate"/>
+<aop-project name="Struts_Spring"/>
+<aop-project name="Example_Struts"/>
+</aop-reference-model>
